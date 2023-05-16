@@ -112,7 +112,7 @@
           font-weight: 500;
         }
         
-        @media (max-width: 800px) {
+        @media (max-width: 768px) {
           .box {
             width:auto;
             height: 500px;
@@ -137,6 +137,7 @@
           height:100px;
           float:right;
           
+          
         }
         .contain {
           display: flex;
@@ -146,6 +147,12 @@
         .left-list,
         .right-list {
           flex-basis: 45%;
+        } @media (max-width: 576px) {
+          .img2 {
+            float: none;
+            display: block;
+            margin: 10px auto;
+          }
         }
     </style>
   </head>

@@ -146,9 +146,7 @@
       display: none;
     }
   }
-  .navbar-collapse.show {
-    right: 0;
-  }
+
   .bo{
       background: url("./images/background_image.png") no-repeat center center fixed;
       background-size: 100% 100%;
