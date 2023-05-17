@@ -22,8 +22,8 @@
       }
   
       .header-info img {
-        width: 7%;
-        height: 7%;
+        width: 30px;
+        height: 30px;
         margin-right: 10px;
       }
   
@@ -43,8 +43,8 @@
       }
   
       .header-icons img {
-        width: 100%;
-        height: 100%;
+        width: 20px;
+        height: 20px;
         margin-right: 50px;
       }
   
@@ -112,10 +112,10 @@
           font-weight: 500;
         }
         
-        @media (max-width: 800px) {
+        @media (max-width: 768px) {
           .box {
             width:auto;
-            height: 500px;
+            min-height: 650px;
             padding: 10px;
              background-color: rgba(255, 255, 255, 0.8);
           border: 1px solid rgba(255, 255, 255, 0.8);
@@ -137,6 +137,7 @@
           height:100px;
           float:right;
           
+          
         }
         .contain {
           display: flex;
@@ -146,7 +147,20 @@
         .left-list,
         .right-list {
           flex-basis: 45%;
+        } @media (max-width: 576px) {
+          .img2 {
+            float: none;
+            display: block;
+            margin: 10px auto;
+          }
         }
+        .hover:hover{
+          color: rgba(209, 10, 10, 0.852) !important;
+        }
+        .contact:hover{
+          color: rgba(209, 10, 10, 0.852) !important;
+        }
+       
     </style>
   </head>
   <body>
@@ -158,11 +172,14 @@
         <div class="vertical-line"></div>
         <img src="./images/message.png" alt="Email">
         <p>care@jbrosinfras.com</p>
+        <div class="vertical-line"></div>
+        <img src="./images/whatsapp.png" alt="Image 3">
+        <p class="contact">91 730 506 5008</p>
       </div>
       <div class="header-icons">
         <img src="./images/facebook.png" alt="Image 1">
         <img src="./images/twitter.png" alt="Image 2">
-        <img src="./images/whatsapp.png" alt="Image 3">
+       
         <img src="./images/instagram.png" alt="Image 4">
         <img src="./images/linkedin.png" alt="Image 5">
       </div>
@@ -179,19 +196,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"><b style="color:black">HOME</b></a>
+              <a class="nav-link active" aria-current="page" href="home.html"><b class="hover" style="color:black">Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"><b style="color:black">ABOUT US</b></a>
+              <a class="nav-link" href="about.html"><b class="hover" style="color:black">About us</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ourproduct.html"><b style="color:black">OUR PRODUCT</b></a>
+              <a class="nav-link" href="ourproduct.html"><b  class="hover"style="color:black">Our Product</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ourservice.html"><b style="color:rgba(209, 10, 10, 0.852)">OUR SERVICES</b></a>
+              <a class="nav-link" href="ourservice.html"><b  class="hover"style="color:rgba(209, 10, 10, 0.852)">Our Services</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><b style="color:black">CONTACT US</b></a>
+              <a class="nav-link" href="contact.html"><b class="hover" style="color:black">Contact Us</b></a>
             </li>
           </ul>
         </div>

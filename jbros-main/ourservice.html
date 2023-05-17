@@ -12,8 +12,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-        background-color: #f5f5f5;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid black;
       }
   
       .header-info {
@@ -22,8 +21,8 @@
       }
   
       .header-info img {
-        width: 7%;
-        height: 7%;
+        width: 30px;
+        height: 30px;
         margin-right: 10px;
       }
   
@@ -43,8 +42,8 @@
       }
   
       .header-icons img {
-        width: 100%;
-        height: 100%;
+        width: 20px;
+        height: 20px;
         margin-right: 50px;
       }
   
@@ -52,122 +51,68 @@
         #header {
           display: none;
         }
+        .bo{
+            min-height: 120vh;
+        }
       }
       .bo{
         background: url("./images/background_image.png") no-repeat center center fixed;
         background-size: 100% 100%;
         width: 100vw;
-        height: 100vb;
+        min-height: 100vh;
       }
 
-      @media (max-width: 767px){
-        .navbar-collapse {
-          position: fixed;
-          top: 0;
-          bottom: 0;
-          right: -100%;
-          width: 70%;
-          z-index: 100;
-          transition: right 0.3s ease-in-out;
-        }
-      }
-  
-        .navbar-collapse.show {
-          right: 0;
-        }
+     
         .box {
           max-width: 1200px;
           width: 100%;
-          height: 500px;
           background-color: rgba(255, 255, 255, 0.8);
           border: 1px solid rgba(255, 255, 255, 0.8);
           border-radius:1em;
           padding: 20px;
-
           margin: 0 auto;
           text-align: center;
         }
-        .box table{
-          width:100%;
-         
-        }
-        .box table th.column1{
-          /* or text-align: right; */
-          width:175px;
-          
-        }
-        .data2{
-          text-align:left;
-          width: 500px;
-          height:100px /* or text-align: right; */
-         
-        }
-        .box table img.img1{
-          width:150px;
-          height: 150px;/* or text-align: right; */
-          
-          
-         
-        }
-  
-       
-        .box table th.column1{
-          /* or text-align: right; */
-          width:200px;
-          height: auto;
-          vertical-align: top;
-        }
-        .box table th.column3{
-          /* or text-align: right; */
-          width:130px;
-          height: 400px;
-          text-align:center;
-          vertical-align: bottom;
+      
+          @media (max-width: 768px) {
+            .header-info img {
+              width: 12%;
+              height: 12%;
+            }
+            .vertical-line {
+              display: none;
+            }
         }
         
-        .box table tr.row1{
-          /* or text-align: right; */
-          width:1144px;
-          height: 400px;
-        }
+          @media (max-width: 576px) {
+            .box {
+              padding: 10px;
+            }
+            .header-info img {
+              width: 20%;
+              height: 20%;
+            }
+            .box table img.img1,
+            .box table img.img2 {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .hover:hover{
+            color: rgba(209, 10, 10, 0.852) !important;
+          }
+          .contact:hover{
+            color: rgba(209, 10, 10, 0.852) !important;
+          }
+         a{
+            color: rgba(209, 10, 10, 0.852) !important;
+            text-decoration: none !important;
+         }
        
-        
-        @media (max-width: 800px) {
-          .box {
-            width:auto;
-            height: 500px;
-            padding: 10px;
-             background-color: rgba(255, 255, 255, 0.8);
-          border: 1px solid rgba(255, 255, 255, 0.8);
-          border-radius:1em;
-          }
-          th.column1{
-            width:200px;
-            vertical-align: top;
-          }
-          th.column2{
-            width:90px;
-          }
-          .box table td.data1 {
-            text-align: justify;
-            font-size: 10px;
-          }
-        }
-        .img2{
-          width:100px;
-          height:100px;
-          float:right;
-          
-        }
-        .contain {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
-        .left-list,
-        .right-list {
-          flex-basis: 45%;
-        }
+         a b{
+            font-weight: 700;
+            
+         }
     </style>
   </head>
   <body>
@@ -179,11 +124,14 @@
         <div class="vertical-line"></div>
         <img src="./images/message.png" alt="Email">
         <p>care@jbrosinfras.com</p>
+        <div class="vertical-line"></div>
+        <img src="./images/whatsapp.png" alt="Image 3">
+        <p class="contact">91 730 506 5008</p>
       </div>
       <div class="header-icons">
         <img src="./images/facebook.png" alt="Image 1">
         <img src="./images/twitter.png" alt="Image 2">
-        <img src="./images/whatsapp.png" alt="Image 3">
+      
         <img src="./images/instagram.png" alt="Image 4">
         <img src="./images/linkedin.png" alt="Image 5">
       </div>
@@ -200,19 +148,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"><b style="color:black">HOME</b></a>
+              <a class="nav-link active" aria-current="page" href="home.html"><b class="hover" style="color:black">Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"><b style="color:black">ABOUT US</b></a>
+              <a class="nav-link" href="about.html"><b class="hover" style="color:black">About Us</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ourproduct.html"><b style="color:black">OUR PRODUCT</b></a>
+              <a class="nav-link" href="ourproduct.html"><b  class="hover"style="color:black">Our Product</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ourservice.html"><b style="color:rgba(209, 10, 10, 0.852)">OUR SERVICES</b></a>
+              <a class="nav-link" href="ourservice.html"><b  class="hover"style="color:rgba(209, 10, 10, 0.852)">Our Services</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><b style="color:black">CONTACT US</b></a>
+              <a class="nav-link" href="contact.html"><b  class="hover"style="color:black">Contact us</b></a>
             </li>
           </ul>
         </div>
@@ -222,40 +170,51 @@
 
     <div class="box">
       <b style="font-size:35px;"><span style="color: rgba(209, 10, 10, 0.852);">Our </span>Services</b>
-      <table>
-       <tr class class="row1">
-        <th class="column2"></th>
-          <th class="column1">
-            <a href="construction.html"><img  class="img" src="./images/construction.png" alt="">
-            <br><b style="font-size:18px;font-weight:750;color:rgba(209, 10, 10, 0.852)">Constructions</b></a>
-          </th>
-          <th class="column3">
-            <a href="industry.html"><img  class="img2" src="./images/industry.png" style="height: 175px; width:175px" alt="">
-            <br><b style="font-size:18px;font-weight:750;color:rgba(209, 10, 10, 0.852)">Industrial Infrastructure Development</b>
-          </a>
-
-          </th>
-          <th class="column1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <a href="construction.html">
+              <img class="img1" src="./images/construction.png" alt="" />
+              <br />
+              <b>Constructions</b>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4">
+            <a href="industry.html">
+              <img class="img2" src="./images/industry.png" alt="" />
+              <br />
+              <b>Industrial Infrastructure Development</b>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 " >
             <a href="architectural_design.html">
-            <img class="img1" src="./images/artitectural.png" alt="">
-            <br><b style="font-size:18px;font-weight:750;color:rgba(209, 10, 10, 0.852)">Architectural <br>Designs</b>
-          </a>
-          </th>
-          <th class="column3">
-            <a href="techinical.html">
-            <img  class="img2" src="./images/techinical.png" style="height: 150px; width:150px" alt="">
-            <br><b style="font-size:18px;font-weight:750;color:rgba(209, 10, 10, 0.852)">Technical Consultation & Digital Survey </b>
-          </a>
-          </th>
-          <th class="column1">
+              <img class="img1" src="./images/artitectural.png" alt="" />
+              <br />
+              <b>Architectural Designs</b>
+            </a>
+          </div>
+        </div>
+          <div class="row d-flex justify-content-around mt-4" >
+          
+          <div class="col-12 col-lg-6 pl-5"id="left" >
+            <a href="technical.html">
+              <img class="img2" src="./images/techinical.png" alt="" />
+              <br />
+              <b>Technical Consultation & Digital Survey</b>
+            </a>
+          </div>
+          <div class="col-12 col-lg-6 pr-5"id="right">
             <a href="interior.html">
-            <img class="img1" src="./images/interior.png" alt="">
-           <br><b style="font-size:18px;font-weight:750;color:rgba(209, 10, 10, 0.852) ">Interiors</b>
-          </a>
-          </th>
-          <th class="column2"></th>
-        </tr>
-      </table>
+              <img class="img1" src="./images/interior.png" alt="" />
+              <br />
+              <b>Interiors</b>
+            </a>
+          </div>
+        
+        
+        </div>
+        </div>
+      </div>
       
     </div>
     

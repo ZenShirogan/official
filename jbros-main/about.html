@@ -24,8 +24,8 @@
       }
   
       .header-info img {
-        width: 7%;
-        height: 7%;
+        width: 30px;
+      height: 30px;
         margin-right: 10px;
       }
   
@@ -45,8 +45,8 @@
       }
   
       .header-icons img {
-        width: 100%;
-        height: 100%;
+        width: 20px;
+        height: 20px;
         margin-right: 50px;
       }
   
@@ -62,7 +62,7 @@
         background: url("./images/background_image.png") no-repeat center center fixed;
         background-size: 100% 100%;
         width: 100vw;
-        height: 100vb;
+        min-height: 120vh;
       }
 
       @media (max-width: 767px){
@@ -117,8 +117,8 @@
       
         .corner-img .custom-column img {
           /* Adjust the maximum width of the image */
-          width: 50px;
-          height: 50px;
+          width: 70px;
+          height: 40px;
          
         } 
         .carousel-inner img {
@@ -129,14 +129,14 @@
          
         }
         .text-order{
+          margin-top: 10px;
           text-align:justify;
+          font-size: 18px;
         }
         .text-order b{
           font-size:20px; 
         }
-        .text-order p{
-          font-size:15px; 
-        }
+       
       
         
       
@@ -149,8 +149,8 @@
             flex-basis: 10%;
           }
           .corner-img .custom-column img {
-            width: 50px;
-            height: 50px; /* Adjust the maximum width of the image on responsive screens */
+            width: 40px;
+            height: 30px; /* Adjust the maximum width of the image on responsive screens */
           }
       
           .corner-img .custom-column b {
@@ -174,12 +174,18 @@
       
         @media only screen and (max-width: 768px) {
           .box {
-            height: 600px;
+            min-height: 650px;
           }
         }
       }
     
-        
+      .hover:hover{
+        color: rgba(209, 10, 10, 0.852) !important;
+      }
+      .contact:hover{
+        color: rgba(209, 10, 10, 0.852) !important;
+      }
+     
         
      
         
@@ -194,6 +200,9 @@
         <div class="vertical-line"></div>
         <img src="./images/message.png" alt="Email">
         <p>care@jbrosinfras.com</p>
+        <div class="vertical-line"></div>
+        <img src="./images/whatsapp.png" alt="Image 3">
+        <p class="contact">91 730 506 5008</p>
       </div>
       <div class="header-icons">
         <img src="./images/facebook.png" alt="Image 1">
@@ -215,19 +224,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"><b style="color:black">HOME</b></a>
+              <a class="nav-link active" aria-current="page" href="home.html"><b  class="hover" style="color:black">Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"><b style="color:rgba(209, 10, 10, 0.852)">ABOUT US</b></a>
+              <a class="nav-link" href="about.html"><b  class="hover"style="color:rgba(209, 10, 10, 0.852)">About Us</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="our_product.html"><b style="color:black">OUR PRODUCT</b></a>
+              <a class="nav-link" href="our_product.html"><b  class="hover"style="color:black">Our Product</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ourservice.html"><b style="color:black">OUR SERVICES</b></a>
+              <a class="nav-link" href="ourservice.html"><b class="hover" style="color:black">Our Services</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><b style="color:black">CONTACT US</b></a>
+              <a class="nav-link" href="contact.html"><b  class="hover"style="color:black">Contact Us</b></a>
             </li>
           </ul>
         </div>
@@ -244,7 +253,7 @@
               <div class="carousel">
                 <div class="carousel-inner" id="slider">
                   <div class="carousel-item active">
-                    <img src="./images/carosal-1.png"  alt="Image 1">
+                    <img src="./images/carosal__n1.png"  alt="Image 1">
                   </div>
                   <div class="carousel-item">
                     <img src="./images/carosal-2.png" alt="Image 2">
