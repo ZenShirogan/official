@@ -52,7 +52,7 @@
     }
   }
   .bo{
-    background: url("bg_home.jpg") no-repeat center center fixed;
+    background: url("./images/bg_home.jpg") no-repeat center center fixed;
     background-size: 100% 100%;
     width: 100vw;
     height: 100vb;
@@ -197,7 +197,7 @@
       white-space: nowrap;
       top: 0;
       left: 0;
-      animation: move 10s;
+      animation: move 5s;
       animation-iteration-count: infinite;
       animation-delay: 1s;
       }
